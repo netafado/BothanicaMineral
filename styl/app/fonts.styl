@@ -1,0 +1,67 @@
+/**
+	Tudo relativo a font é criado nesse arquivo
+*/
+@font-face {
+  font-family: 'gotham';
+  src: url("fontes/gothammedium-webfont.eot");
+  src: url("fontes/gothammedium-webfont.eot?#iefix") format('embedded-opentype'), url("fontes/gothammedium-webfont.woff2") format('woff2'), url("fontes/gothammedium-webfont.woff") format('woff'), url("fontes/gothammedium-webfont.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gotham';
+  src: url("fontes/gotham-bold-webfont.eot");
+  src: url("fontes/gotham-bold-webfont.eot?#iefix") format('embedded-opentype'), url("fontes/gotham-bold-webfont.woff2") format('woff2'), url("fontes/gotham-bold-webfont.woff") format('woff'), url("fontes/gotham-bold-webfont.ttf") format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'gotham_lightregular';
+  src: url("fontes/gotham-light-webfont.eot");
+  src: url("fontes/gotham-light-webfont.eot?#iefix") format('embedded-opentype'), url("fontes/gotham-light-webfont.woff2") format('woff2'), url("fontes/gotham-light-webfont.woff") format('woff'), url("fontes/gotham-light-webfont.ttf") format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+p, .font-style 
+	letter-spacing remify($letterSpacing)
+	margin-bottom remify(20px)
+
+create-hs()
+	for hs, value in $hs-sizes
+		{hs}
+			font-size remify(value)
+		@media screen and (max-width: $queries['medium'])
+			{hs}
+				font-size remify(value) * $font-medium
+				text-align $font-medium-align
+		@media screen and (max-width: $queries['small'])
+			{hs}
+				font-size remify(value) * $font-xs
+				text-align $font-xs-align
+				
+// /cria tamanhos diferentes para as fontes
+fonts-size( )
+	for fonts, value in $font-size
+		.font-{fonts}
+			@extend .font-style
+			font-size value
+
+.uppercase
+	text-transform: uppercase
+
+.light
+	font-weight: 100
+.bold
+	font-weight: bold
+
+.capitular:first-letter
+	font-size: 30px
+	float: left
+	margin-right: 5px
+	font-weight: bold
+
+
+create-hs()
+fonts-size()

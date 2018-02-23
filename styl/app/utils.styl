@@ -1,0 +1,63 @@
+.relative
+    position: relative
+
+.absolute 
+    position: absolute
+
+.z-alto
+    z-index: 2
+.padding-zero
+    padding: 0
+
+.text-overflow
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+
+
+
+div.laptop-wrapper {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 67.5%;
+    height: 0;
+}
+div.laptop-wrapper iframe {
+    box-sizing: border-box;
+    background: url(https://s3-sa-east-1.amazonaws.com/happybiz-web/Experiencia-De-Sucesso/site-h/img/jordan/laptop.png) center center no-repeat;
+    background-size: contain;
+    padding: 11.9% 15.5% 14.8%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.display-Flex
+    display: flex
+    width: 100%
+    justify-content: space-between
+    margin-top: 40px
+    flex-wrap: wrap
+    .flex-item
+        padding: 40px
+        text-align: center
+        width: 30%
+
+.borda
+    border: 1px solid #c2c2c2
+    margin-bottom: 20px
+
+.icone-verde
+    margin-top: -100px
+
+@media screen and (max-width: $queries['medium'])
+    .display-Flex
+        margin-top: 40px
+        .flex-item
+            width: 100%
+            &:nth-child(2)
+                margin-top: 100px
+                margin-bottom: 100px

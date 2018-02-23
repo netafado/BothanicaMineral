@@ -1,0 +1,35 @@
+header
+	height: auto
+	
+
+#topo
+	background-color: alpha(black, 80%)
+	z-index: 9999999
+	width 100%
+	top 0
+
+.logo-container
+	padding: 15px 0
+
+#topo.redu
+	background-color:alpha(black, 95%);
+
+footer
+	@extend .text-inverse
+	p 
+		@extend .light
+
+#loader
+	width: 100%
+	height 100%
+	z-index: 99999999
+	display: none
+	position: absolute
+	background-color: alpha($colors['inverse'], 1 );
+	justify-content: center
+	img 
+		align-self: center
+	
+
+.loader-img
+	height 90px

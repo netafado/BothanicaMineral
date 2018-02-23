@@ -1,0 +1,50 @@
+.ir-topo
+    width 50px
+    height 50px
+    background-color: $colors["oceano"]
+    position fixed
+    bottom 10px
+    right: 10px
+
+.seta
+    padding-top: 10px
+    padding-left: 5px
+
+footer
+    padding: 120px 0 30px 0px 
+    .tel 
+        font-weight: 100;
+        font-size: 30px;
+    .copyright
+        text-align: left
+        img 
+            margin: 0
+    .rede-sociais
+        text-align: center
+        a:nth-child(2)
+            margin 0 10px
+    .contato
+        text-align: right
+
+@media screen and (max-width: $queries['medium'])
+    footer
+        padding: 60px 0 30px 0px 
+        .copyright
+            text-align: center
+            img 
+                margin: 0 auto
+        .rede-sociais
+            text-align: center
+            margin: 30px 0
+        .contato
+            text-align: center
+
+@media screen and (max-width: $queries['small'])
+    footer
+        padding: 60px 0 30px 0px 
+        .copyright
+        .rede-sociais
+        .contato
+        p
+            font-size: 12px
+
