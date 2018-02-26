@@ -13,27 +13,6 @@ html(lang="pt")
         #loader
             img.loader-img.img-responsive(src="img/coroa.gif", alt="Lodder")
 
-        block header
-            section#topo
-                header
-                    .container               
-                        .row.logo-container
-                            .col-sm-12
-                                a(href="/")
-                                    img(src="https://s3-sa-east-1.amazonaws.com/happybiz-web/Experiencia-De-Sucesso/novo-site/logo-es-branco.svg", alt="Logo ES", class="img-responsive", style="max-width:180px; display:inline")
-                                .menu.visible-xs.visible-sm.visible-md(style="width:40px; float: right; display:inline")
-                                    img(src="img/menu.png", alt="Logo ES", class="img-responsive", style="max-width:30px")
-
-
-                    .navegacao
-                        .container
-                            .row
-                                nav
-                                    ul#desk-nav 
-                                        each item in [ {name: 'QUEM SOMOS', link:'quem-somos.html'}, {name: 'PALESTRANTES', link:'palestrantes.html'},{name:'BLOG', link:'#'} ,{name:'DEPOIMENTOS', link:'depoimentos.html'} ,{name:'AGENDA', link:'#'} ,{name:'QUERO SER UM AFILIADO', link:'#'} ,{name:'ÁREA DO CLIENTE', link:'#'} ,{name:'PERGUNTAS FREQUENTES', link:'#'} ,{name:'COACHES', link:'coaches.html'} ,{name:'CONTATO', link:'contato.html'}]
-                                            li 
-                                                a.nav-item(href=item.link) #{item.name}
-
 
         block content
         .ir-topo 
@@ -42,29 +21,6 @@ html(lang="pt")
         block footer
             footer.bg-black
                 .container
-                    .row
-                        .col-md-4.copyright
-                            p
-                                img(src="https://s3-sa-east-1.amazonaws.com/happybiz-web/Experiencia-De-Sucesso/novo-site/logo-es-branco.svg", class="img-responsive", style="max-width:180px")
-                            p © 2017 www.experienciadesucesso.com.br<br>
-                              | Todos os direitos reservados.
-                        .col-md-4
-                            .rede-sociais.text-center
-                                .p 
-                                    a(href="https://www.facebook.com/experienciadesucesso/timeline", target="_blanck")
-                                        img(src="img/icone-face.png", alt="Facebook")
-                                    a(href="https://www.instagram.com/experienciadesucesso/", target="_blanck")
-                                        img(src="img/icone-insta.png", alt="Facebook")
-                                    a(href="https://www.youtube.com/channel/UC2FjbFMxWx7S3SRcET1I4lg", target="_blanck")
-                                        img(src="img/icone-youtube.png", alt="Facebook", class="mg-10-left")
-                        .col-md-4
-                            p.text-inverse.contato
-                                span 
-                                    img(src="img/telef.png", alt="", style="margin-top: -18px; margin-right: 10px;") 
-                                    span(class="tel") 11 3522 1873 <br>
-                                    | Seg a Sex das 9h ás 18h entre em contato <br />
-                                    | contato@experienciadesucesso.com.br
-                        .col-sm-12
                             
 
 
