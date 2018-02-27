@@ -1353,21 +1353,47 @@ footer .contato {
     display: none;
   }
 }
+@-webkit-keyframes rotacao {
+  from {
+    -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotacao {
+  from {
+    -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 #loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   height: 100%;
   z-index: 99999999;
-  display: none;
-  position: absolute;
-  background-color: #fff;
+  position: fixed;
+  background-color: #58595c;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-#loader > * {
+#loader .loader-img {
+  width: 72px;
+  height: 72px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-animation: rotacao 2s infinite;
+          animation: rotacao 2s infinite;
 }
 @supports (-ms-ime-align: auto) {
   .div-curso-back {
