@@ -24,6 +24,13 @@ html {
 .banners {
   padding: 0;
 }
+.back-cover {
+  background-size: cover;
+}
+.back-contain,
+.img-back-leort {
+  background-size: contain;
+}
 .text-overflow {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -963,6 +970,15 @@ header {
 #topo.redu {
   background-color: rgba(0,0,0,0.95);
 }
+.img-back-leort {
+  background-image: url("../img/background-topo.jpg");
+}
+#c-banner {
+  padding-top: 80px;
+}
+.leort-desc {
+  padding: 20px 0;
+}
 .line-gold {
   width: 100%;
   height: 1px;
@@ -1374,7 +1390,7 @@ footer .contato {
   height: 100%;
   z-index: 99999999;
   position: fixed;
-  background-color: #58595c;
+  background-color: #fff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1385,8 +1401,8 @@ footer .contato {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-animation: rotacao 2s infinite;
-          animation: rotacao 2s infinite;
+  -webkit-animation: rotacao 2.5s infinite;
+          animation: rotacao 2.5s infinite;
 }
 @supports (-ms-ime-align: auto) {
   .div-curso-back {
