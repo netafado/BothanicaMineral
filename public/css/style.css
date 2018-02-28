@@ -975,6 +975,9 @@ header {
 #topo.redu {
   background-color: rgba(0,0,0,0.95);
 }
+.rede-sociais-face {
+  padding-right: 10px;
+}
 .img-back-leort {
   background-image: url("../img/background-topo.jpg");
 }
@@ -1033,17 +1036,19 @@ img.leort-banner1 {
 .ir-topo {
   width: 50px;
   height: 50px;
-  background-color: ;
+  background-color: #fff;
   position: fixed;
   bottom: 10px;
   right: 10px;
 }
 .seta {
-  padding-top: 10px;
-  padding-left: 5px;
+  padding-top: 5px;
+  padding-left: 3px;
+  -webkit-animation: piscar 2s infinite;
+          animation: piscar 2s infinite;
 }
 footer {
-  padding: 120px 0 30px 0px;
+  padding: 120px 0 0px 0px;
 }
 footer .tel {
   font-weight: 100;
@@ -1063,6 +1068,19 @@ footer .rede-sociais a:nth-child(2) {
 }
 footer .contato {
   text-align: right;
+}
+.logo-biz {
+  background-color: #96999b;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 50px;
+  text-align: center;
+}
+.logo-biz-img {
+  margin: auto;
+}
+.grande {
+  height: 5px;
 }
 @media screen and (max-width: 768px) {
   footer {
@@ -1093,61 +1111,32 @@ footer .contato {
     font-size: 12px;
   }
 }
-.navegacao {
-  border-top: 1px solid;
-}
-.menu {
-  cursor: pointer;
-}
-#desk-nav {
-  color: #fff;
+.display-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0;
-  margin: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-#desk-nav li {
+.display-menu li {
   list-style: none;
-  font-weight: 100;
-  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 50px;
+  padding-top: 8px;
 }
-#desk-nav li .nav-item {
-  display: block;
-  padding: 20px 10px;
-  color: #fff;
-  letter-spacing: 0.3;
+.display-menu li a {
   text-decoration: none;
-  background-color: transparent;
-  transition: 1s background-color, 1s box-shadow;
-  box-shadow: 0px 0px 10 px none;
+  color: #58595c;
+  transition: 2s;
 }
-#desk-nav li .nav-item:hover {
-  background-color: ;
-  box-shadow: 0px 0px 2px;
+.display-menu li a:hover {
+  color: #29713d;
+  font-weight: bold;
 }
-#desk-nav li .nav-item.ativo {
-  color: ;
-}
-#desk-nav li .nav-item.ativo:hover {
-  box-shadow: 0;
-  background-color: transparent;
-  color: ;
-}
-@media (max-width: 1200px) {
-  #desk-nav {
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .menu {
-    display: none;
-  }
+.display-menu li a.ativo {
+  color: #29713d;
+  font-weight: bold;
 }
 @-webkit-keyframes rotacao {
   from {
@@ -1167,6 +1156,22 @@ footer .contato {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes piscar {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+@keyframes piscar {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.3;
   }
 }
 #loader {
