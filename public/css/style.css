@@ -14,7 +14,8 @@ html {
   position: relative;
 }
 .absolute,
-#topo {
+#topo,
+.bandeira {
   position: absolute;
 }
 .z-alto {
@@ -24,7 +25,8 @@ html {
 .banners {
   padding: 0;
 }
-.back-cover {
+.back-cover,
+.bg-imagem-tec {
   background-size: cover;
 }
 .back-contain,
@@ -119,16 +121,13 @@ p,
 .font-extra-large {
   letter-spacing: 0.1rem;
   margin-bottom: 2rem;
+  font-size: 18px;
 }
 .uppercase {
   text-transform: uppercase;
 }
 .light,
-footer p,
-.titulo-topo,
-.form-contato input,
-.form-contato select,
-.form-contato textarea {
+footer p {
   font-weight: 100;
 }
 .bold {
@@ -243,7 +242,7 @@ h6 {
   font-size: 18px;
 }
 .font-extra-large {
-  font-size: 22px;
+  font-size: 25px;
 }
 .bg-black {
   background-color: #333;
@@ -265,6 +264,9 @@ h6 {
 }
 .bg-verde {
   background-color: #219650;
+}
+.bg-light-gray {
+  background-color: #f9f9f9;
 }
 .text-black {
   color: #333;
@@ -288,10 +290,13 @@ footer {
 .text-verde {
   color: #219650;
 }
+.text-light-gray {
+  color: #f9f9f9;
+}
 body {
   font: 100%;
   font-family: 'Titillium Web', sans-serif;
-  color: 'black';
+  color: #58595c;
 }
 p {
   font-size: 15px;
@@ -413,7 +418,7 @@ button {
 .btn:hover {
   background-color: transparent;
   color: ;
-  box-shadow: 2px 0px 8px #9e9c9c;
+  box-shadow: 2px 0px 8px #f9f9f9;
 }
 .btn:focus {
   background-color: ;
@@ -973,98 +978,30 @@ header {
 .img-back-leort {
   background-image: url("../img/background-topo.jpg");
 }
+.bg-imagem-tec {
+  background-image: url("../img/background-meio.png");
+}
 #c-banner {
   padding-top: 80px;
 }
+.bandeira {
+  bottom: -30px;
+  left: 0;
+  z-index: 3;
+}
 .leort-desc {
-  padding: 20px 0;
+  box-shadow: 0px 4px 1px #f9f9f9;
+}
+img.leort-banner1 {
+  margin: -20px -40px -40px 100px;
+}
+.text-leort {
+  margin-top: 130px;
 }
 .line-gold {
   width: 100%;
   height: 1px;
   background-image: url("../img/linha-dourada.png");
-}
-.cursos-todos h4 {
-  font-size: 16px;
-}
-.cursos-todos .curso {
-  border: 1px solid #ebebeb;
-  margin-top: 20px;
-}
-.div-curso-back {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  background-position: center center;
-}
-.div-curso-back::after {
-  content: "";
-  display: block;
-  padding-bottom: 90%;
-}
-.div-curso-back a {
-  opacity: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  position: absolute;
-  color: #fff;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-  transition: 1s;
-  background-color: rgba(255,255,255,0.8);
-}
-.div-curso-back a > * {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-.div-curso-back:hover a {
-  opacity: 1;
-}
-.artigo-data {
-  margin: 0 auto;
-  padding-left: 20px;
-}
-.artigo-w {
-  background-color: #fff;
-  transition: 1s;
-  color: #000;
-  padding: 0 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #d3d3d3;
-}
-.artigo-w:first-child {
-  margin-top: 30px;
-}
-.artigo-w:not(:last-child) {
-  margin-bottom: 30px;
-}
-.artigo-w .dia {
-  font-size: 65px;
-}
-.artigo-w:hover {
-  background-color: #333;
-}
-.artigo-w:hover .artigo-textos h4 {
-  color: ;
-}
-.artigo-w:hover .artigo-textos p {
-  color: #fff;
 }
 .arrowsPlace {
   width: 120px;
@@ -1079,168 +1016,18 @@ header {
 .cursos-todos {
   padding: 30px 5px;
 }
-.line-data {
-  width: 100%;
-  height: 2px;
-  background-color: #000;
-}
-.line-data .block {
-  width: 30px;
-  height: 4px;
-  margin: auto;
-  margin-top: -1px;
-  background-color: ;
-}
-.line-regiter {
-  width: 40px;
-  height: 1px;
-  background-color: #000;
-  margin: auto;
-}
-#registrar {
-  padding: 120px 0;
-}
-.register-texto {
-  margin-top: 80px;
-}
-.form-index {
-  width: 100%;
-  margin: auto;
-  max-width: 450px;
-  padding: 5px 20px;
-  padding-bottom: 40px;
-  background-color: #fff;
-}
-.form-index .form-group {
-  max-width: 380px;
-  margin: auto;
-}
-.form-index button.bg-oceano {
-  color: #fff;
-  font-size: 13px;
-}
-.form-index button.input-lg {
-  border-radius: 0;
-}
-.form-index > input {
-  margin-top: 20px;
-}
-img.slick-disabled {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-.slick-next,
-.slick-prev {
-  z-index: 99999;
-}
-.slick-prev {
-  left: 25px;
-}
-.slick-next {
-  right: 25px;
-}
-.seta-right,
-.seta-left {
-  position: absolute;
-  top: 50%;
-  z-index: 999;
-  cursor: pointer;
-}
-.seta-right {
-  right: 25px;
-}
-.seta-left {
-  left: 25px;
-}
-.depoimento-topo {
-  padding: 100px 0 200px 10px;
-}
-.titulo-topo {
-  margin-top: 120px;
-}
-.palestrante-texto {
-  padding: 80px 50px 0px 30px;
-}
-.palestrante-img {
-  margin-top: 30px;
-}
-.icon-data {
-  background-image: url("../img/icone.jpg");
-  background-position: 15px center;
-  background-repeat: no-repeat;
-  margin-top: 20px;
-}
-.artigo-textos {
-  padding-left: 80px;
-}
-.artigo-textos h4 {
-  text-align: left;
-}
-.artigo-textos p {
-  text-align: left;
-}
-.linha {
-  width: 40px;
-  border: 1px solid #000;
-  margin: auto;
-}
-.contato {
-  color: #9e9c9c;
-  font-weight: 100;
-}
-.form-contato {
-  margin-top: 20px;
-}
-.form-contato input,
-.form-contato select,
-.form-contato textarea {
-  text-align: left;
-  color: #000;
-  border: 1px solid #e5e5e5;
-  box-shadow: inset 0 0 0 rgba(0,0,0,0.075);
-}
-.display-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 30px;
-}
-.display-flex .flex-item {
-  width: 20%;
-}
 @media screen and (max-width: 768px) {
-  .palestrante-texto {
-    padding: 20px 20px 0px 30px;
+  #c-banner {
+    padding-top: 20px;
   }
-  .depoimento-topo {
-    padding: 50px 0 50px 10px;
+  .text-leort {
+    margin-top: 50px;
   }
-  .titulo-topo {
-    margin-top: 20px;
+  .leort-banner1 {
+    margin: 0 0 0 60px;
   }
-  #registrar {
-    padding: 60px 0;
-  }
-  .register-texto {
-    margin-top: 40px;
-  }
-  .artigo-w .dia {
-    font-size: 45px;
-  }
-  .artigo-textos {
-    padding-left: 20px;
-  }
-  .artigo-textos h4 {
-    text-align: left;
-  }
-  .artigo-textos p {
-    text-align: left;
-  }
-  .line {
-    position: relative;
-  }
-  .line::after {
-    display: none;
+  .bandeira {
+    max-width: 350px;
   }
 }
 .ir-topo {

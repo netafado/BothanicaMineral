@@ -7,79 +7,34 @@
 .img-back-leort
     @extends .back-contain
     background-image: url('../img/background-topo.jpg')
+.bg-imagem-tec
+    @extends .back-cover
+    background-image: url('../img/background-meio.png')
+
 #c-banner
     padding-top 80px
 
+.bandeira
+    @extends .absolute
+    bottom: -30px
+    left 0
+    z-index 3
+
 .leort-desc
-    padding 20px 0
+    box-shadow: 0px 4px 1px $shadow-color
+
+img.leort-banner1
+    margin -20px -40px -40px 100px
+
+.text-leort
+    margin-top: 130px
+
 
 .line-gold
     width: 100%
     height 1px
     background-image: url(../img/linha-dourada.png)
 
-.cursos-todos
-    h4 
-        font-size: 16px
-    .curso
-        border 1px solid #ebebeb
-        margin-top 20px
-
-.div-curso-back
-    width: 100%;
-    background-repeat: no-repeat
-    background-size: cover
-    display: flex
-    justify-content: center
-    position relative
-    background-position: center center
-    &::after
-        content: "";
-        display: block;
-        padding-bottom: 90%;    
-    a
-        opacity 0
-        display: flex;
-        justify-content: center
-        align-self: center;
-        position absolute
-        color white
-        text-decoration: none
-        width 100%
-        height 100%
-        transition 1s        
-        background-color: alpha($colors['inverse'], 0.8)
-        & > *
-            align-self center
-    &:hover
-        a
-            opacity 1
-
-.artigo-data
-    margin 0 auto
-    padding-left: 20px
-
-.artigo-w
-    background-color white
-    transition 1s
-    color black
-    padding 0 20px
-    padding-top 30px
-    padding-bottom: 30px
-    border-bottom 1px solid lightgray
-    &:first-child
-        margin-top: 30px
-    &:not(:last-child)
-        margin-bottom: 30px
-    .dia 
-        font-size: 65px
-    &:hover
-        background-color: $colors['black']
-        .artigo-textos
-            h4
-               color $colors['oceano'] 
-            p 
-                color $colors['inverse']
 
 .arrowsPlace
     width: 120px
@@ -94,146 +49,17 @@
 .cursos-todos
     padding 30px 5px
 
-.line-data
-    width: 100%
-    height: 2px
-    background-color: black
-    .block
-        width: 30px
-        height: 4px
-        margin: auto
-        margin-top: -1px
-        background-color: $colors['oceano']
 
-
-.line-regiter
-    width: 40px
-    height 1px
-    background-color: black
-    margin: auto
-
-#registrar
-    padding 120px 0
-.register-texto
-    margin-top: 80px
-.form-index
-    width: 100%
-    margin auto
-    max-width 450px
-    padding 5px 20px
-    padding-bottom: 40px
-    background-color: white
-    .form-group
-        max-width 380px;
-        margin: auto
-    button.bg-oceano
-        color: white
-        font-size: 13px
-    button.input-lg
-        border-radius: 0
-    & > input 
-        margin-top: 20px
-        
-img.slick-disabled
-    filter: grayscale(100%);
-
-.slick-next
-.slick-prev
-    z-index: 99999
-
-.slick-prev
-    left 25px
-
-.slick-next
-    right 25px
-
-
-.seta-right
-.seta-left
-    position: absolute
-    top 50%
-    z-index 999
-    cursor pointer
-
-.seta-right
-    right 25px
-.seta-left
-    left 25px
-
-.depoimento-topo
-    padding: 100px 0 200px 10px
-
-.titulo-topo
-    @extends .light
-    margin-top 120px
-
-.palestrante-texto
-    padding 80px 50px 0px 30px
-.palestrante-img
-    margin-top 30px
-.icon-data
-    background-image: url(../img/icone.jpg)
-    background-position: 15px center;
-    background-repeat: no-repeat
-    margin-top 20px
-
-.artigo-textos
-    padding-left: 80px            
-    h4
-        text-align: left
-    p 
-        text-align: left
-
-.linha
-    width: 40px
-    border: 1px solid #000
-    margin: auto
-
-.contato
-    color: $shadow-color
-    font-weight: 100
-
-.form-contato
-    margin-top: 20px
-    & input
-    & select 
-    & textarea
-        text-align: left
-        color black
-        @extends .light
-        border 1px solid #e5e5e5
-        box-shadow: inset 0 0 0 rgba(0,0,0,0.075)
-
-.display-flex
-    display: flex
-    margin-top: 30px
-    .flex-item
-        width: 20%
 
 @media screen and (max-width: $queries['medium'])
-    .palestrante-texto
-        padding 20px 20px 0px 30px
-    .depoimento-topo
-        padding: 50px 0 50px 10px
-    .titulo-topo
-        margin-top 20px
-    #registrar
-        padding 60px 0
-    .register-texto
-        margin-top: 40px
-    .artigo-w
-        .dia 
-            font-size: 45px
-    .artigo-textos
-        padding-left: 20px              
-        h4
-            text-align: left
-        p 
-            text-align: left
-    .line
-        position: relative
-        &::after
-            display none
+    #c-banner
+        padding-top 20px        
+    .text-leort
+        margin-top: 50px
 
+    .leort-banner1
+        margin 0 0 0 60px
+    .bandeira
+        max-width 350px
 
         
