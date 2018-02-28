@@ -41,25 +41,43 @@ block content
                     .line-gold
 
 
-    section#acoes
+    section#acoes.back-acoes
         .container
             .row
-                .col-sm-8.col-sm-offset-2
-                    h3 3 ações principais:
+                .col-sm-10.col-sm-offset-1
+                    
+                    h1 3 ações principais:
+                    each i in [1,2,3,4,5]
+                        .list-acoes
+                            h3 ORTOMOLECULAR
+                            ul
+                                li Destoxificante: pela eliminação das toxinas, metais pesados e de todo o ranço celular.
+                                li Antioxidante: pela neutralização e eliminação de radicais livres, prevenindo o envelhecimento precoce e outros danos celulares .
+                                li Reorganizador: pela capacidade de equilibrar desde as menores estruturas corporais, os átomos, promove reestruturação de todas as substâncias que são formadas a partir destes, ou seja, moléculas, células, tecidos, órgãos, sistemas. 
 
 
 
 
-    section#imagem.bg-imagem-tec
+
+
+    section#imagem.back-acoes
         .container
             .row
                 .col-sm-6
                 .col-sm-6
-                    img.img-responsive.img.leort-banner1(src="img/mulher.png", alt="") 
+                    img.img-responsive(src="img/mulher.png", alt="") 
 
 
 
-    section#depoimentos
+    section#depoimentos.section.bg-imagem-tec
+        .container
+            .row
+                h1.text-center.bold.text-verde.pd-40-bottom Depoimentos
+                .col-sm-8.col-sm-offset-2.relative
+                    .caixa-leort
+                        img(src="img/leort-caixa-depoimentos.png", srcset="")
+                    .embed-responsive.embed-responsive-16by9
+                        iframe.embed-responsive-item(src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0", frameborder="0", allowfullscreen)
 
 
 

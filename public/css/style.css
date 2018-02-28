@@ -26,7 +26,8 @@ html {
   padding: 0;
 }
 .back-cover,
-.bg-imagem-tec {
+.bg-imagem-tec,
+.back-acoes {
   background-size: cover;
 }
 .back-contain,
@@ -984,13 +985,24 @@ header {
 .bg-imagem-tec {
   background-image: url("../img/background-meio.png");
 }
+.back-acoes {
+  background-image: url("../img/background-moleculas.png");
+}
 #c-banner {
   padding-top: 80px;
+}
+.caixa-leort {
+  position: absolute;
+  z-index: 3;
+  margin-left: -180px;
 }
 .bandeira {
   bottom: -30px;
   left: 0;
   z-index: 3;
+}
+.section {
+  padding: 120px 0;
 }
 .leort-desc {
   box-shadow: 0px 4px 1px #f9f9f9;
@@ -1012,9 +1024,6 @@ img.leort-banner1 {
   position: relative;
   right: 0;
   float: right;
-}
-.section {
-  padding: 40px 0;
 }
 .cursos-todos {
   padding: 30px 5px;
