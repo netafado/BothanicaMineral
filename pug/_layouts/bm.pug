@@ -19,11 +19,12 @@ html(lang="pt")
         header
             .container
                 .row
-                    .logo-leort.col-lg-2
+                    .logo-leort.col-xs-6.col-xs-push-3.col-md-2.col-md-push-0
                         a(href="https://www.bothanicamineral.com.br/" target="_blank")
                             img(src="img/logo-topo.png", alt="Logo Bothanica Mineral")
-                    .menu-leort.col-lg-8
-                        nav
+                    .menu-leort.col-xs-3.col-xs-pull-6.col-md-8.col-md-pull-0
+                        // Navegação para desk
+                        nav.visible-md.visible-lg
                             ul.display-menu
                                 li 
                                     a(href="#") bothanica mineral
@@ -33,8 +34,14 @@ html(lang="pt")
                                     a(href="#") Ações
                                 li 
                                     a(href="#") depoimentos
+                        // Navegação para mob
+                        nav.visible-xs.visible-sm
+                                .menu-mob
+                                    span.icon-bar
+                                    span.icon-bar  
+                                    span.icon-bar                   
 
-                    .rede-sociais.col-lg-2
+                    .rede-sociais.col-xs-3.col-md-2
                         a(href="https://www.facebook.com/Bothanicamineral/" target="_blank")
                             img.rede-sociais-face(src="img/icon-face.png", alt="Facebook")
                         a(href="https://www.instagram.com/bothanicamineral/?hl=pt" target="_blank")
