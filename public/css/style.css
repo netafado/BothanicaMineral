@@ -1082,6 +1082,16 @@ footer .contato {
 .grande {
   height: 5px;
 }
+.footer-texto {
+  list-style: none;
+  margin-left: -40px;
+}
+.footer-texto li {
+  margin-bottom: 10px;
+}
+.footer-texto li a {
+  color: #fff;
+}
 @media screen and (max-width: 768px) {
   footer {
     padding: 60px 0 30px 0px;
