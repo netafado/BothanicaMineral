@@ -1055,6 +1055,17 @@ img.leort-banner1 {
   height: 1px;
   background-image: url("../img/linha-dourada.png");
 }
+.line-width {
+  width: 150px;
+  margin: auto;
+  height: 1px;
+  background-image: url("../img/linha-dourada.png");
+}
+.line-width-big {
+  width: 400px;
+  height: 2px;
+  background-image: url("../img/linha-dourada.png");
+}
 .arrowsPlace {
   width: 120px;
   height: 40px;
