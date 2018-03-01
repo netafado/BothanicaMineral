@@ -1147,7 +1147,7 @@ footer .contato {
 .display-menu li a {
   text-decoration: none;
   color: #58595c;
-  transition: 2s;
+  transition: 0.3s;
 }
 .display-menu li a:hover {
   color: #29713d;
