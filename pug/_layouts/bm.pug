@@ -7,6 +7,8 @@ html(lang="pt")
         include ../_partials/icons
         title #{title}
         block CSS
+            link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+            link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
             link(rel="stylesheet", href="css/plugins.css")
 
     body
@@ -48,7 +50,7 @@ html(lang="pt")
                             img.rede-sociais-face(src="img/icon-face.png", alt="Facebook")
                         a(href="https://www.instagram.com/bothanicamineral/?hl=pt" target="_blank")
                             img.rede-sociais-insta(src="img/icon-insta.png", alt="Facebook")
-        .line-gold
+
 
 
         block content
@@ -102,5 +104,6 @@ html(lang="pt")
         block scriptsJS
             script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
             script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
 
             

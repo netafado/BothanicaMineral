@@ -7,6 +7,8 @@ block append CSS
     
 
 block content
+    .line-gold
+        canvas#brilho.absolute
     section#banners.bg-light-gray.relative
         img.bandeira(src="img/bm-bandeira.png", alt="Bothanica Mineral")
         .container
@@ -51,10 +53,7 @@ block content
             .row
                 .col-sm-10.col-sm-offset-1
                     
-                    h1 3 ações principais:
-                    
-                    .line-width-big
-
+                    h1 3 ações principais:                    
                     .list-acoes
                         h3.bold ORTOMOLECULAR
                         ul
@@ -111,7 +110,9 @@ block content
                         iframe.embed-responsive-item(src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0", frameborder="0", allowfullscreen)
 
 
-
+    // objetos não visiveis na tela
+    img(src="img/linha-dourada.png", alt="linha dourada", class="hidden", id="dourado")
+    img(src="img/brilho.png", alt="linha dourada", class="hidden", id="shiny")
 
 
 

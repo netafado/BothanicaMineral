@@ -9,6 +9,6 @@ var app		= express();
 
 app.use(express.static( __dirname + '/public' ));
 
-app.listen(3000, function(){
+app.listen(80, function(){
 	console.log("Serving is Running");
 });

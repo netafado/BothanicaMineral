@@ -1018,6 +1018,7 @@ header .rede-sociais {
 }
 .img-back-leort {
   background-image: url("../img/background-topo.jpg");
+  background-repeat: no-repeat;
 }
 .bg-imagem-tec {
   background-image: url("../img/background-meio.png");
@@ -1045,7 +1046,7 @@ header .rede-sociais {
   box-shadow: 0px 4px 1px #f9f9f9;
 }
 img.leort-banner1 {
-  margin: -20px -40px -40px 100px;
+  margin-bottom: -40px;
 }
 .text-leort {
   margin-top: 130px;
@@ -1076,6 +1077,15 @@ img.leort-banner1 {
 .cursos-todos {
   padding: 30px 5px;
 }
+@media screen and (max-width: 992px) {
+  .text-leort {
+    margin-top: 0px;
+  }
+  .bandeira {
+    max-width: 320px;
+    bottom: -40px;
+  }
+}
 @media screen and (max-width: 768px) {
   .img-back-leort {
     text-align: center;
@@ -1087,13 +1097,29 @@ img.leort-banner1 {
     padding-top: 20px;
   }
   .text-leort {
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .leort-banner1 {
-    margin: 0 0 0 60px;
+    margin: 0 0 0 0;
   }
+  .img-back-leort img {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .item-c h1,
+  .item-c p {
+    text-align: center;
+  }
+  .item-c p {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 390px) {
   .bandeira {
-    max-width: 350px;
+    bottom: -20px;
+    max-width: 280px;
   }
 }
 .ir-topo {
@@ -1191,6 +1217,9 @@ footer {
 .display-menu li a.ativo {
   color: #29713d;
   font-weight: bold;
+}
+.menu-mob {
+  cursor: pointer;
 }
 .menu-mob span.icon-bar {
   margin-top: 4px;
