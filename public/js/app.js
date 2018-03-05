@@ -85,9 +85,18 @@
         mostrarIrTopo(e);
     });
 
+    $('.fechar-menu').on('click', function(){
+        $('#menu-mob-flutuante').fadeOut(200);
+    });
+
+    $('.menu-mob').on('click', function(){
+        $('#menu-mob-flutuante').fadeIn(200);
+    })
+
     $('.link-topo').on('click', function(){
         $('.link-topo').removeClass('ativo');
         $(this).addClass('ativo');
+        $('#menu-mob-flutuante').fadeOut(200);
     })
 
     //esse evento acontece quando toda a página é carregada

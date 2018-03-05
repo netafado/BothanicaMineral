@@ -30,6 +30,10 @@ footer
 .grande
     height:5px
 
+footer
+    .logo-footer
+        text-align: right 
+
 .footer-texto
     list-style: none
     margin-left: -40px
@@ -38,6 +42,10 @@ footer
         a
             color: $colors["inverse"]
 
+@media screen and (max-width: $queries['large'])
+    .text-banner-2
+        line-height: 0.2
+
 @media screen and (max-width: $queries['medium'])
     .footer-texto
         text-align: center
@@ -45,6 +53,8 @@ footer
         img 
             margin: auto
     footer
+        .logo-footer
+            text-align: center 
         padding: 60px 0 30px 0px 
         .copyright
             text-align: center

@@ -129,6 +129,9 @@
     position relative
     margin-top -40px
 
+.texto-banner-1
+    font-size: 30px
+    line-height: 1.2
 @media screen and (max-width: $queries['large'])
     .leort-image-text
         padding-top 20px
@@ -138,8 +141,19 @@
     .bandeira
         max-width 320px
         bottom: -40px
+    .seta-left
+        left -10px
+    .seta-right
+        right -10px
 
 @media screen and (max-width: $queries['medium'])
+    footer
+        .container
+            div
+                margin-top 20px
+    .text-banner-2
+        p
+            line-height: 0.2
     .section
         padding 50px 0
         padding-bottom: 80px
@@ -150,7 +164,9 @@
         margin-top 50px
         margin-bottom: 0
     #acoes
-        margin-top 50px
+        margin-top 0px
+        padding-top: 40px;
+        padding-bottom: 50px;
     .img-back-leort
         text-align: center
 
@@ -165,7 +181,7 @@
         margin 0 0 0 0
     .img-back-leort
         img 
-            max-width 300px
+            max-width 280px
     .seta-left
         left 0
     .seta-right
@@ -183,6 +199,9 @@
             font-size: 18px
             line-height: 1.2
             margin-bottom: 10px
+            img
+                margin: auto
+
         .text-banner
             img
                 margin: auto
