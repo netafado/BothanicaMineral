@@ -13,12 +13,20 @@ p, .font-style
 		margin: 0;
 		li
 			@extends .font-style
-			padding-left: 1em;
+			margin-bottom: 0
+			padding-left: 4em;
 			text-indent: -1.2em;
 			&::before
 				content: "• ";
 				font-size: 28px
 				color: $colors['verde-bm']
+
+
+@media screen and (max-width: $queries['medium'])
+	#acoes
+		ul
+			li
+				padding-left: 1em
 
 
 create-hs()
