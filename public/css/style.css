@@ -261,7 +261,7 @@ h6 {
   font-size: 18px;
 }
 .font-large {
-  font-size: 18px;
+  font-size: 25px;
 }
 .font-extra-large {
   font-size: 20px;
@@ -987,7 +987,10 @@ header {
   height: auto;
   background-image: url("../img/back-topo.jpg");
   background-repeat: repeat-x;
-  padding: 30px 0;
+  padding-top: 30px;
+}
+header .container {
+  padding-bottom: 30px;
 }
 header .rede-sociais {
   text-align: left;
@@ -1006,7 +1009,10 @@ header .rede-sociais {
     height: auto;
     background-image: url("../img/back-topo.jpg");
     background-repeat: repeat-x;
-    padding: 30px 0;
+    padding-top: 15px;
+  }
+  header .container {
+    padding-bottom: 15px;
   }
   header .rede-sociais {
     text-align: right;
@@ -1139,6 +1145,11 @@ header .rede-sociais {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.pos-fixed {
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+}
 .leort-image-text {
   padding-top: 180px;
   padding-left: 30px;
@@ -1213,6 +1224,9 @@ header .rede-sociais {
   }
 }
 @media screen and (max-width: 576px) {
+  .leort-desc {
+    margin-top: 40px;
+  }
   .item-c h1,
   .item-c p {
     text-align: center;
@@ -1275,6 +1289,13 @@ footer {
   color: #fff;
 }
 @media screen and (max-width: 768px) {
+  .footer-texto {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer-texto img {
+    margin: auto;
+  }
   footer {
     padding: 60px 0 30px 0px;
   }
@@ -1294,7 +1315,7 @@ footer {
 }
 @media screen and (max-width: 576px) {
   footer {
-    padding: 60px 0 30px 0px;
+    padding: 60px 0 0 0px;
   }
   footer .copyright,
   footer .rede-sociais,
