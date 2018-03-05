@@ -13,6 +13,8 @@
 .back-acoes
     @extends .back-cover
     background-image: url('../img/background-moleculas.png')
+    background-repeat: no-repeat;
+    background-position: center center;
 #c-banner
     padding-top: 80px;
     z-index: 999;
@@ -31,7 +33,9 @@
     padding 120px 0
 .leort-desc
     box-shadow: 0px 4px 1px $shadow-color
-
+.marca-desc
+    margin-top: 10px
+    margin-bottom: 30px
 
 
 .text-leort
@@ -52,12 +56,22 @@
     width: 100%
     height 1px
     background-image: url(../img/linha-dourada.png)
-
-.line-width
-    width: 150px;
-    margin: auto
-    height 1px
+.line-small
     background-image: url(../img/linha-dourada.png)
+    background-position: center center
+    background-size: contain
+    height 2px
+.line-h3
+    @extends .line-small
+    max-width 450px
+    height 3px
+.line-width
+    max-width 150px;
+    margin: auto
+    height 2px
+    background-image: url(../img/linha-dourada.png)
+    background-position: center center
+    background-size: contain
 
 .line-width-big
     width: 400px;
@@ -73,9 +87,16 @@
 
 #leort
     margin-top 100px
-    margin-bottom: 80px
+    .unico
+        font-size: 40px
+
 #acoes
-    margin-top 80px
+    padding-top 80px
+
+
+.marca
+    font-weight: 500
+    color: $colors['verde-bm']
 
 
 .cursos-todos

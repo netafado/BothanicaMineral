@@ -1,4 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700");
+@font-face {
+  font-family: 'Exo 2';
+  src: url("fonts/Exo2-Medium.woff2") format('woff2'), url("fonts/Exo2-Medium.woff") format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Exo 2';
+  src: url("fonts/Exo2-Bold.woff2") format('woff2'), url("fonts/Exo2-Bold.woff") format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Exo 2';
+  src: url("fonts/Exo2-Regular.woff2") format('woff2'), url("fonts/Exo2-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 *,
 body,
 h1,
@@ -8,7 +25,7 @@ h4,
 h5,
 h6,
 html {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Exo 2', sans-serif;
 }
 .relative {
   position: relative;
@@ -94,29 +111,9 @@ div.laptop-wrapper iframe {
     margin-bottom: 100px;
   }
 }
-@font-face {
-  font-family: 'gotham';
-  src: url("fontes/gothammedium-webfont.eot");
-  src: url("fontes/gothammedium-webfont.eot?#iefix") format('embedded-opentype'), url("fontes/gothammedium-webfont.woff2") format('woff2'), url("fontes/gothammedium-webfont.woff") format('woff'), url("fontes/gothammedium-webfont.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'gotham';
-  src: url("fontes/gotham-bold-webfont.eot");
-  src: url("fontes/gotham-bold-webfont.eot?#iefix") format('embedded-opentype'), url("fontes/gotham-bold-webfont.woff2") format('woff2'), url("fontes/gotham-bold-webfont.woff") format('woff'), url("fontes/gotham-bold-webfont.ttf") format('truetype');
-  font-weight: bold;
-  font-style: bold;
-}
-@font-face {
-  font-family: 'gotham_lightregular';
-  src: url("fontes/gotham-light-webfont.eot");
-  src: url("fontes/gotham-light-webfont.eot?#iefix") format('embedded-opentype'), url("fontes/gotham-light-webfont.woff2") format('woff2'), url("fontes/gotham-light-webfont.woff") format('woff'), url("fontes/gotham-light-webfont.ttf") format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
 p,
 .font-style,
+#acoes ul li,
 .font-extra-small,
 .font-small,
 .font-medium,
@@ -124,7 +121,23 @@ p,
 .font-extra-large {
   letter-spacing: 0.1rem;
   margin-bottom: 2rem;
+  font-size: 22px;
+  line-height: 30px;
   font-size: 18px;
+}
+#acoes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#acoes ul li {
+  padding-left: 1em;
+  text-indent: -1.2em;
+}
+#acoes ul li::before {
+  content: "• ";
+  font-size: 28px;
+  color: #29713d;
 }
 .uppercase {
   text-transform: uppercase;
@@ -239,7 +252,7 @@ h6 {
   font-size: 12px;
 }
 .font-medium {
-  font-size: 15px;
+  font-size: 18px;
 }
 .font-large {
   font-size: 18px;
@@ -301,9 +314,6 @@ body {
   font-family: 'Titillium Web', sans-serif;
   color: #58595c;
   overflow-x: hidden;
-}
-p {
-  font-size: 15px;
 }
 blockquote {
   border-left: 5px solid;
@@ -1023,6 +1033,8 @@ header .rede-sociais {
 }
 .back-acoes {
   background-image: url("../img/background-moleculas.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 #c-banner {
   padding-top: 80px;
@@ -1045,6 +1057,10 @@ header .rede-sociais {
 .leort-desc {
   box-shadow: 0px 4px 1px #f9f9f9;
 }
+.marca-desc {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 .text-leort {
   margin-top: 130px;
 }
@@ -1066,11 +1082,24 @@ header .rede-sociais {
   height: 1px;
   background-image: url("../img/linha-dourada.png");
 }
-.line-width {
-  width: 150px;
-  margin: auto;
-  height: 1px;
+.line-small,
+.line-h3 {
   background-image: url("../img/linha-dourada.png");
+  background-position: center center;
+  background-size: contain;
+  height: 2px;
+}
+.line-h3 {
+  max-width: 450px;
+  height: 3px;
+}
+.line-width {
+  max-width: 150px;
+  margin: auto;
+  height: 2px;
+  background-image: url("../img/linha-dourada.png");
+  background-position: center center;
+  background-size: contain;
 }
 .line-width-big {
   width: 400px;
@@ -1086,10 +1115,16 @@ header .rede-sociais {
 }
 #leort {
   margin-top: 100px;
-  margin-bottom: 80px;
+}
+#leort .unico {
+  font-size: 40px;
 }
 #acoes {
-  margin-top: 80px;
+  padding-top: 80px;
+}
+.marca {
+  font-weight: 500;
+  color: #29713d;
 }
 .cursos-todos {
   padding: 30px 5px;
