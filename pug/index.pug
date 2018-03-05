@@ -9,7 +9,7 @@ block append CSS
 block content
     .line-gold
         canvas#brilho.absolute
-    section#banners.bg-light-gray.relative
+    section#banners.relative
         img.bandeira(src="img/bm-bandeira.png", alt="Bothanica Mineral")
         .container
             .row
@@ -26,22 +26,42 @@ block content
                                     | as disfunções da pele.
                                 p.font-extra-large #SegredosBM
                             .col-sm-6.img-back-leort
-                                img.img-responsive.img.leort-banner1(src="img/leort-solo.png", alt="")                              
+                                img.img-responsive.img.leort-banner1(src="img/leort-solo.png", alt="") 
+                        .row.item-c
+                            .col-sm-5.col-md-.col-md-push-7.text-banner
+                                h1 
+                                    span.text-verde.text-uppercase 3 ações:
+                                p.font-extra-large
+                                    span.bold 1. ORTOMOLECULAR <BR>
+                                    span.hidden-xs Destoxificante, antioxidante e reorganizador.
+                                p.font-extra-large
+                                    span.bold 2. LINFOCINÉTICO  <BR>
+                                    span.hidden-xs Drenagem Linfática, aumento da  permeabilidade 
+                                                    | vascular e trocas nos capilares, aumento da oxigenação e nutrição e aumento no número de células de defesa 
+                                p.font-extra-large
+                                    span.bold 3. LIPOLÍTICO  <BR>
+                                    span.hidden-xs Quebra da gordura, acelerador, efeito bipolar e gordura emulsionada.
+                                p.font-extra-large
+                                    img(src="img/ICONES-PRODUTOS.png", alt="Icones Leort")
+                            .col-sm-7.col-md-7.col-md-pull-5.img-back-leort(style="background-image:url(img/background-leort.png)")
+                                img.img-responsive.img.leort-banner1(src="img/leort-profissional.png", alt="") 
 
-    .line-gold.mg-40-bottom
+                            
+
+    .line-gold.bottom-line
 
     section#leort.pd-80-top
         .container
             .row
                 .col-sm-9.col-sm-offset-1.leort-desc
                     .line-gold
-                    h2.text-center 
+                    h1.text-center 
                         span.bold.text-verde LEORT® 
                         |É VIDA!
                     
                     .line-width
                     
-                    h4.text-center Fluido para massagem corporal
+                    h4.bold.text-center Fluido para massagem corporal
                     p Atua como um potente anti-inflamatório, antioxidante e varredor de radicais livres, toxinas e metais pesados, 
                         | eliminando o ranço celular acumulado. Promove uma destoxificação do organismo, auxiliando no combate da celulite 
                         | e outras disfunções estéticas. Tem ação lipolítica e afinidade pelos adipócitos, ativando os complexos enzimáticos que promovem a quebra da gordura de reserva e aumento do metabolismo. Possui também a função de reparação e construção dos tecidos e estrutura da pele, atuando no combate da flacidez e estrias. Aumenta a permeação dos ativos de outros produtos da linha Bothanica Mineral® quando utilizados em associação, potencializando os resultados dos tratamentos. 
@@ -104,8 +124,8 @@ block content
             .row
                 h1.text-center.bold.text-verde.pd-80-bottom Depoimentos
                 .col-sm-8.col-sm-offset-2.relative
-                    .caixa-leort
-                        img(src="img/leort-caixa-depoimentos.png", srcset="")
+                    .caixa-leort.visible-lg
+                        img(src="img/leort-caixa-depoimentos.png", alt="leort")
                     .embed-responsive.embed-responsive-16by9
                         iframe.embed-responsive-item(src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0", frameborder="0", allowfullscreen)
 

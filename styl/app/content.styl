@@ -1,13 +1,11 @@
 
-#topo
-    @extends .absolute
-
 .banners
     @extends .padding-zero
 .img-back-leort
     @extends .back-contain
-    background-image: url('../img/background-topo.jpg')
+    background-image: url('../img/background-topo.png')
     background-repeat: no-repeat
+    background-position: center center
 
 .bg-imagem-tec
     @extends .back-cover
@@ -16,7 +14,9 @@
     @extends .back-cover
     background-image: url('../img/background-moleculas.png')
 #c-banner
-    padding-top 80px
+    padding-top: 80px;
+    z-index: 999;
+    position: relative;
 .caixa-leort
     position: absolute
     z-index 3
@@ -26,18 +26,27 @@
     @extends .absolute
     bottom: -30px
     left 0
-    z-index 3
+    z-index 9999
 .section
     padding 120px 0
 .leort-desc
     box-shadow: 0px 4px 1px $shadow-color
 
-img.leort-banner1
-    margin-bottom -40px
+
 
 .text-leort
     margin-top: 130px
 
+.seta-left
+.seta-right
+    position absolute
+    top 50%
+    cursor pointer
+    z-index 99
+.seta-left
+    left -70px
+.seta-right
+    right -70px
 
 .line-gold
     width: 100%
@@ -62,10 +71,20 @@ img.leort-banner1
     right 0
     float right 
 
+#leort
+    margin-top 100px
+    margin-bottom: 80px
+#acoes
+    margin-top 80px
+
+
 .cursos-todos
     padding 30px 5px
 
-
+.bottom-line
+    z-index 9
+    position relative
+    margin-top -40px
 
 @media screen and (max-width: $queries['large'])
     .text-leort
@@ -75,6 +94,11 @@ img.leort-banner1
         bottom: -40px
 
 @media screen and (max-width: $queries['medium'])
+    #leort
+        margin-top 50px
+        margin-bottom: 0
+    #acoes
+        margin-top 50px
     .img-back-leort
         text-align: center
 
@@ -90,6 +114,10 @@ img.leort-banner1
     .img-back-leort
         img 
             max-width 300px
+    .seta-left
+        left 0
+    .seta-right
+        right 0
 
 @media screen and (max-width: $queries['small'])
     //tetste
@@ -100,6 +128,10 @@ img.leort-banner1
         p 
             font-size: 18px
             line-height: 1.2
+            margin-bottom: 10px
+        .text-banner
+            img
+                margin: auto
 @media screen and (max-width: 390px)
     .bandeira
         bottom: -20px

@@ -16,7 +16,7 @@
         let vel = {x:6, y:0};
 
         function desenhar(){
-            console.log('desenhar');
+            //console.log('desenhar');
             ctx.clearRect(0,0, cW, cH);
             ctx.drawImage(bg,0,0, cW, 1);
             ctx.drawImage(brilho,position.x,position.y, 200, 1);
@@ -34,6 +34,30 @@
 
 
     }
+
+
+    //slick
+    $('#c-banner').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        nextArrow: '<img src="img/seta-cat-right.png" class="seta-right" />"',
+		prevArrow: '<img src="img/seta-cat-left.png" class="seta-left" />"',
+      });
+      
+
+
+    $('a.goesTo, .link-footer').bind('click', function (event) {
+        var $anchor = $(this);
+
+        $('html, body').stop().animate({ scrollTop: $($anchor.attr('href')).offset().top }, 1000, 'swing');
+
+        // Outras AnimaÃ§Ãµes
+        // linear, swing, jswing, easeInQuad, easeInCubic, easeInQuart, easeInQuint, easeInSine, easeInExpo, easeInCirc, easeInElastic, easeInBack, easeInBounce, easeOutQuad, easeOutCubic, easeOutQuart, easeOutQuint, easeOutSine, easeOutExpo, easeOutCirc, easeOutElastic, easeOutBack, easeOutBounce, easeInOutQuad, easeInOutCubic, easeInOutQuart, easeInOutQuint, easeInOutSine, easeInOutExpo, easeInOutCirc, easeInOutElastic, easeInOutBack, easeInOutBounce
+
+    });
     //esse evento acontece quando toda a página é carregada
     window.addEventListener('load', function(){
         $('#loader').fadeOut(200);
