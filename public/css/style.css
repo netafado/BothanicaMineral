@@ -1152,6 +1152,9 @@ header .rede-sociais {
   margin: auto;
   margin-top: 20px;
 }
+.text-banner-pd {
+  margin-top: 120px;
+}
 .text-banner-2 {
   margin-top: 25px;
   padding-left: 25px;
@@ -1446,7 +1449,7 @@ footer .logo-footer {
 .display-menu li {
   list-style: none;
   text-transform: uppercase;
-  margin-right: 50px;
+  margin-right: 40px;
   padding-top: 8px;
 }
 .display-menu li a {
