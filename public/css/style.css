@@ -116,7 +116,7 @@ p,
 #acoes ul li {
   margin-bottom: 0;
   padding-left: 4em;
-  text-indent: -1.2em;
+  text-indent: -1em;
 }
 #acoes ul li::before {
   content: "• ";
