@@ -58,23 +58,6 @@ html {
   overflow: hidden;
   white-space: nowrap;
 }
-div.laptop-wrapper {
-  position: relative;
-  padding-top: 25px;
-  padding-bottom: 67.5%;
-  height: 0;
-}
-div.laptop-wrapper iframe {
-  box-sizing: border-box;
-  background: url("https://s3-sa-east-1.amazonaws.com/happybiz-web/Experiencia-De-Sucesso/site-h/img/jordan/laptop.png") center center no-repeat;
-  background-size: contain;
-  padding: 11.9% 15.5% 14.8%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 .display-Flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1161,6 +1144,28 @@ header .rede-sociais {
   font-weight: 500;
   color: #29713d;
 }
+.marca .text-banner-2 p {
+  line-height: 1;
+  text-align: center;
+}
+.marca .text-banner-2 img {
+  margin: auto;
+  margin-top: 20px;
+}
+.text-banner-2 {
+  margin-top: 25px;
+  padding-left: 25px;
+}
+.text-banner-2 h5 {
+  line-height: 0.7;
+}
+.text-banner-2 h5 span {
+  font-size: 30px;
+  font-weight: light;
+}
+.text-banner-2 img {
+  margin-top: 20px;
+}
 .cursos-todos {
   padding: 30px 5px;
 }
@@ -1182,8 +1187,9 @@ header .rede-sociais {
     margin-top: 0px;
   }
   .bandeira {
-    max-width: 320px;
-    bottom: -40px;
+    max-width: 550px;
+    bottom: 0;
+    left: -70px;
   }
   .seta-left {
     left: -10px;
@@ -1193,11 +1199,24 @@ header .rede-sociais {
   }
 }
 @media screen and (max-width: 768px) {
+  .bandeira {
+    bottom: -20px;
+    max-width: 450px;
+    left: -150px;
+  }
   footer .container div {
     margin-top: 20px;
   }
+  .text-banner-2 {
+    text-align: center;
+  }
   .text-banner-2 p {
-    line-height: 0.2;
+    line-height: 1;
+    text-align: center;
+  }
+  .text-banner-2 img {
+    margin: auto;
+    margin-top: 20px;
   }
   .section {
     padding: 50px 0;
@@ -1264,7 +1283,8 @@ header .rede-sociais {
 @media screen and (max-width: 390px) {
   .bandeira {
     bottom: -20px;
-    max-width: 280px;
+    max-width: 420px;
+    left: -120px;
   }
 }
 .ir-topo {
