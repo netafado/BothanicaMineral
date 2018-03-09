@@ -37,7 +37,9 @@
     $('#c-banner').slick({
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 1500,
+        autoplaySpeed: 7000,
+        autoplay: true,
         fade: true,
         cssEase: 'linear',
         nextArrow: '<img src="img/seta-cat-right.png" class="seta-right" />"',
