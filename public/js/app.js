@@ -45,6 +45,17 @@
         nextArrow: '<img src="img/seta-cat-right.png" class="seta-right" />"',
 		prevArrow: '<img src="img/seta-cat-left.png" class="seta-left" />"',
       });
+
+    //slick
+    $('#bannerDep').slick({
+        dots: true,
+        infinite: true,
+        speed: 1500,
+        autoplaySpeed: 14000,
+        autoplay: true,
+        fade: true,
+        cssEase: 'linear',
+      });
       
 
 

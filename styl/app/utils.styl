@@ -53,3 +53,38 @@
             &:nth-child(2)
                 margin-top: 100px
                 margin-bottom: 100px
+
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: black;
+}
+.slick-dots li button:before {
+    font-family: slick;
+    font-size: 12px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: 1;
+    color: $colors['verde-bm'];
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+    width: 0.7em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: $colors['verde-bm'];
+  outline: 1px solid slategrey;
+}
