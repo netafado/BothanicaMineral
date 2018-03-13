@@ -52,7 +52,7 @@
         infinite: true,
         speed: 1500,
         autoplaySpeed: 14000,
-        autoplay: true,
+        autoplay: false,
         fade: true,
         cssEase: 'linear',
       });
