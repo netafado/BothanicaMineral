@@ -48,15 +48,21 @@
 
     //slick
     $('#bannerDep').slick({
-        dots: true,
-        infinite: true,
-        speed: 1500,
-        autoplaySpeed: 14000,
-        autoplay: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
         fade: true,
-        cssEase: 'linear',
+        asNavFor: '#navdep'
       });
-      
+    
+    $('#navdep').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '#bannerDep',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
 
 
     $('.goesTo, .link-footer').on('click', function (event) {

@@ -1211,6 +1211,13 @@ header .rede-sociais {
   font-size: 30px;
   line-height: 1.2;
 }
+.onde-encontrar a {
+  color: #58595c;
+}
+.onde-encontrar a:hover {
+  text-decoration: none;
+  color: #29713d;
+}
 @media screen and (max-width: 992px) {
   .leort-image-text {
     padding-top: 20px;
