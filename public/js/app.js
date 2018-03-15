@@ -153,4 +153,6 @@
         $('#loader').fadeOut(200);
         Brilho(document.getElementById('brilho'), $('.line-gold').width(), 1);
     })
+
+
 })($)
