@@ -1213,6 +1213,7 @@ header .rede-sociais {
 }
 .onde-encontrar a {
   color: #58595c;
+  text-decoration: none;
 }
 .onde-encontrar a:hover {
   text-decoration: none;
